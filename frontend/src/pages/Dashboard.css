@@ -1,0 +1,231 @@
+#dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #222;
+    color: #aaa;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-right: 1px solid #444;
+}
+
+.sidebar h2 {
+    margin-bottom: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 0.5rem;
+}
+
+.friend-request {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.friend-request input {
+    flex-grow: 1;
+    padding: 0.5rem;
+    background-color: #333;
+    color: #aaa;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.friend-request button {
+    background-color: #ce5de6;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.friend-request button:hover {
+    background-color: #bb3ed6;
+}
+
+.chat-section {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-history {
+    flex-grow: 1;
+    background-color: #333;
+    color: #aaa;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.message-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.message {
+    background-color: #111;
+    color: #aaa;
+    display: flex;
+    align-items: center;
+    max-width: 16rem;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    margin-top: 0.2rem;
+}
+
+.message.own {
+    align-self: flex-end;
+    background-color: #ae0d8d;
+    color: white;
+}
+
+.message.other {
+    align-self: flex-start;
+    background-color: #444;
+    color: white;
+}
+
+.message-label {
+    font-size: 0.8rem;
+    color: #ccc;
+    margin-bottom: 0.2rem;
+}
+
+.message-wrapper.own {
+    align-items: flex-end;
+}
+
+.message-wrapper.other {
+    align-items: flex-start;
+}
+
+.timestamp {
+    font-style: italic;
+    font-size: 0.7rem;
+    margin-left: 0.5rem;
+}
+
+form {
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+form textarea {
+    resize: none;
+    flex-grow: 1;
+    background-color: #111;
+    color: #aaa;
+    border: none;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.message-input-container {
+    display: flex;
+    align-items: center;
+}
+
+.lock-button {
+    background-color: transparent;
+    border: none;
+    color: #ce5de6;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+form .send-button {
+    background-color: #ce5de6;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+form .send-button:hover {
+    background-color: #bb3ed6;
+}
+
+.vote-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.vote-buttons button {
+    background: transparent;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.vote-buttons button:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 0.3rem;
+}
+
+.upvote-button {
+    color: #aaa;
+}
+
+.downvote-button {
+    color: #aaa;
+}
+
+.upvote-button.active,
+.upvote-button:hover {
+    color: green;
+}
+
+.downvote-button.active,
+.downvote-button:hover {
+    color: red;
+}
+
+form .logout-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+
+form .logout-button:hover {
+    background-color: #c0392b;
+}
